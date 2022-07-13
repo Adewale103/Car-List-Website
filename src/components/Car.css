@@ -1,0 +1,32 @@
+.car{
+    height: 800px;
+    width: 700px;
+    background-color: #041562;
+    margin-top: 200px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .car-name{
+    color: #646FD4;
+    background-color: #041562;
+    font-size: 50px;
+    margin: 0;
+    border-radius: 10px 10px 0 0 ;
+    padding: 10px;
+  }
+  
+  .car img{
+   width: 700px;
+   height: 450px;
+  }
+  
+  .car-speed{
+   color: #646FD4;
+   font-size: 50px;
+  }
+  
+  .car-engine{
+    color: #646FD4;
+    font-size: 40px;
+  }
+  

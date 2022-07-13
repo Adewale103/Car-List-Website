@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Car from './components/Car';
+import cars from './data/carlist';
 
 function App() {
+   
+  function displayCar(cars){
+    return(
+      <Car
+      key ={cars.id}
+      name = {cars.name}
+      image = {cars.image}
+      speed = {cars.topSpeed}
+      engine = {cars.engine}/>
+    )
+    
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className='App-header'>Top 10 Fastest Cars in the World</h1>
+
+      <div className="car-list">
+          {cars.map(displayCar)}
+      </div>
+
     </div>
   );
 }
